@@ -1,0 +1,231 @@
+/* general */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.hero-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(183, 83, 128, 0.6);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text h1 {
+  margin-bottom: 5px;
+  text-shadow: 3px 3px 5px #000;
+  color: #eeded4;
+}
+
+.hero-text span {
+  text-transform: uppercase;
+  color: #ffac81;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+section {
+   scroll-margin-top: 60px;
+}
+
+/* nawigacja */
+
+nav {
+  position: sticky;
+  top: 0;
+  height: 60px;
+  line-height: 60px;
+  background-image: linear-gradient(315deg, #ffac81 0%, #ff928b 89%);
+  text-align: center;
+  z-index: 5;
+}
+
+.burger-icon {
+  display: block;
+  margin-left: auto;
+  padding: 0 30px;
+  line-height: 60px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.burger-icon:hover {
+  color: white;
+}
+
+.nav-items {
+  display: none;
+}
+
+/* header */
+
+.header {
+  position: relative;
+  height: 330px;
+  background-image: url("../IMG/tree-small.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* main */
+
+main {
+  margin: 80px 0;
+}
+
+/* o nas */
+
+.about-us-info {
+  margin-bottom: 10px;
+  padding: 0 20px;
+}
+
+/* products */
+
+.products {
+  margin: 60px auto;
+}
+
+.product {
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.product:hover h3 {
+  scale: 1.5;
+}
+
+.product h3 {
+  text-transform: uppercase;
+  transition: scale 0.3s;
+}
+
+.first-product {
+  background-image: url("../IMG/kids-small.jpg");
+}
+
+.second-product {
+  background-image: url("../IMG/computer-small.jpg");
+}
+
+.third-product {
+  background-image: url("../IMG/work-small.jpg");
+}
+
+.fourth-product {
+  background-image: url("../IMG/lamptop-small.jpg");
+}
+
+/* kontakt */
+.contact {
+  text-align: center;
+}
+
+.contact h3 {
+  margin: 20px 0 5px;
+  text-transform: uppercase;
+}
+
+/* footer */
+
+footer {
+  padding: 30px 10px;
+  text-align: center;
+  background-image: linear-gradient(315deg, #ffac81 0%, #ff928b 89%);
+}
+
+@media (min-width: 768px) {
+  .burger-icon {
+    display: none;
+  }
+
+  .nav-items {
+    display: block;
+  }
+
+  .nav-items a {
+    padding: 0 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s;
+  }
+
+  .nav-items a:hover {
+    color: white;
+  }
+
+  .header {
+    height: 400px;
+    background-image: url("../IMG/tree-big.jpg");
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+  }
+}
+
+.product h3 {
+  font-size: 24px;
+}
+
+@media (min-width: 992px) {
+  .products-box {
+    font-size: 0;
+  }
+
+  .product {
+    display: inline-block;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-text h1 {
+    font-size: 42px;
+  }
+
+  .hero-text p {
+    font-size: 20px;
+  }
+}
